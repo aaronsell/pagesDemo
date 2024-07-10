@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title>Government Spending Pie Charts in JS</title>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	</head>
+	
+	<body>
+		<center>
+			<h1>Government Spending Pie Charts in JS</h1>
+			
+            <p>Numbers on hover reflect the rounded USD (in millions) spent in each category in 2017.</p>
+            <select id="selDataset">
+                <option value="australia">Australia</option>
+                <option value="brazil">Brazil</option>
+                <option value="uk">United Kingdom</option>
+                <option value="mexico">Mexico</option>
+                <option value="singapore">Singapore</option>
+                <option value="southAfrica">South Africa</option>
+            </select>
+
+            <div id="pie"></div>
+        </center>
+
+            <p>Data Sources:<br />
+                <ul>
+                    <li>
+                        <a href="https://data.worldbank.org/indicator/NE.CON.GOVT.ZS">General government final consumption expenditure (% of GDP)</a>
+                    </li>
+                    <li>
+                        <a href="https://data.worldbank.org/indicator/SE.XPD.TOTL.GD.ZS">Government expenditure on education, total (% of GDP)</a>
+                    </li>
+                    <li>
+                        <a href="https://data.worldbank.org/indicator/SH.XPD.GHED.GD.ZS">Domestic general government health expenditure (% of GDP)</a>
+                    </li>
+                    <li>
+                        <a href="https://data.worldbank.org/indicator/GB.XPD.RSDV.GD.ZS">Research and development expenditure (% of GDP)</a>
+                    </li>
+                    <li>
+                        <a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.CD">GDP (current US$)</a>
+                    </li>
+                    </ul>
+            </p>
+
+            <script src="governmentSpending.js"></script>
+            <script src="governmentPlots.js"></script>
+        <center>
+			<a href="index.html">Return to the homepage</a>
+			<hr>
+			<em>Copyright &copy; 2024 Aaron's Website</em>			
+		</center>
+	</body>
+</html>
